@@ -101,35 +101,7 @@ public class Carreras extends javax.swing.JFrame {
 
     
     
-    private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {                                    
-// TODO add your handling code here:
-        int x, y;
-        x = jLabel2.getX();
-        y = jLabel2.getY();
-        System.out.println(jLabel2.getLocation());//mostramos la posicion de la imagen
-
-        switch (evt.getExtendedKeyCode()) {// captura las teclas
-            case KeyEvent.VK_UP:
-                jLabel2.setLocation(x, y - 10);//arriba
-                //Girar Hacia Arriba Imagen
-                break; 
-            case KeyEvent.VK_DOWN:
-                jLabel2.setLocation(x, y + 6);//abajo
-                //Girar Hacia abajo Imagen
-                break;
-            case KeyEvent.VK_LEFT:
-                jLabel2.setLocation(x - 10, y);// derecha
-                //Girar Hacia derecha Imagen
-                break;
-            case KeyEvent.VK_RIGHT:
-                jLabel2.setLocation(x + 10, y); //izquierda
-                //Girar Hacia izquierda Imagen
-                break; // hace que la imagen se mueva con las teclas.
-        }
-
-        jLabel1.repaint();
-
-    }     
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
